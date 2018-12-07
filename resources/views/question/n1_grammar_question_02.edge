@@ -1,0 +1,72 @@
+@layout('question/layout')
+
+@section('content')
+<div class="input-field col s3">
+<p>
+<h3 class="entry-title">JLPT GRAMMAR QUIZ N1-02</h3>
+<span class="character" style="font-size : 1.5rem;">赤い部分の言葉を漢字で書くとき、最もよいものを一つ選んでください。</span>
+</p>
+Q:1　会社のことを思えばこそ、厳しい環境の中でも<font COLOR="#ff0000">けんめい</font>に努力を続けてこられたのです。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion1" id="1" onclick="funcEval(1,1)" />
+    <span>１　賢明</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion1" id="2" onclick="funcEval(1,2)" />
+    <span>２　憲明</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion1" id="3" onclick="funcEval(1,3)" />
+    <span>３　件名</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion1" id="4" onclick="funcEval(1,4)" />
+    <span>４　懸命</span>
+  </label>
+</FORM>
+<img src="/pic/999n.gif" width="36" height="33" border="0" name="kekka1"><br />
+
+Q:2　何度も試験をしたとはいえ、新製品である限り<font COLOR="#ff0000">けっかん</font>が絶対にないとは言い切れない。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="funcEval(2,1)" />
+    <span>１　欠陏</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="funcEval(2,2)" />
+    <span>２　欠陥</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="funcEval(2,3)" />
+    <span>３　欠陌</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="funcEval(2,4)" />
+    <span>４　欠陷</span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka2"><br />
+
+Q:3　この不況下にあって、<font COLOR="#ff0000">せんい</font>業界も大変苦戦している。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="funcEval(3,1)" />
+    <span>　１　繊維</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="funcEval(3,2)" />
+    <span>　２　繊位</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="funcEval(3,3)" />
+    <span>　３　線維</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="funcEval(3,4)" />
+    <span>　４　線位</span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka3"><br />　
+</div>
+@endsection

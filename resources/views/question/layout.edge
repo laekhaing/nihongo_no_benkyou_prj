@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>日本語の勉強</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.4.85/css/materialdesignicons.min.css">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="/css/main.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="/css/style.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<header>
+  <nav class="blue lighten-2">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">日本語の勉強</a>
+      <ul id="nav-mobile" class="right">
+        <li class="hide-on-med-and-down">
+          <a href="/question/logout">
+            ログアウト
+          </a>
+        </li>
+        <li class="hide-on-large-only">
+          <a href="/question/logout" class="tooltipped" data-position="bottom" data-tooltip="ログアウト">
+            <i class="mdi mdi-logout"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="container">
+    @!section('content')
+    @!section('question')
+  </div>
+</main>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="/js/materialize.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/n1_kanji_question_01.js"></script>
+<script type="text/javascript" src="/resources/js/n1_kanji_question_02.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems);
+  });
+</script>
+@!section('javascript')
+</body>
+</html>
