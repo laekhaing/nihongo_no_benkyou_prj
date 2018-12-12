@@ -1,17 +1,77 @@
-@layout('question/layout')
+<!DOCTYPE html>
+<html>
+<head>
+  <title>日本語の勉強</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.4.85/css/materialdesignicons.min.css">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="/css/main.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="/css/style.css"  media="screen,projection"/>
 
-@section('content')
-<div class="wrapper">
-<a target="_self"><button id="button" type="button" style="width:50px;height:30px">N1</button></a>
-<a target="_self"><button type="button" style="width:50px;height:30px">N2</button></a>
-<a target="_self"><button type="button" style="width:50px;height:30px">N3</button></a>
-<a target="_self"><button type="button" style="width:50px;height:30px">N4</button></a>
-<a target="_self"><button type="button" style="width:50px;height:30px">N5</button></a>
-<br><br>
-<a href="/question/kanji/n1_kanji_question"><button type="button" style="width:50px;height:30px">Kanji</button></a>
-<a href="/question/grammar/n1_grammar_question"><button type="button" style="width:80px;height:30px">Grammar</button></a>
-<br><br>
-<a target="_self"><button type="button" style="width:50px;height:30px">01</button></a>
-<a target="_self"><button type="button" style="width:50px;height:30px">02</button></a>
-</div>
-@endsection
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<header>
+  <nav class="blue lighten-2">
+    <div class="nav-wrapper">
+      <a href="/question" class="brand-logo">日本語の勉強</a>
+      <ul id="nav-mobile" class="right">
+        <li class="hide-on-med-and-down">
+          <a href="/question/logout">
+            ログアウト
+          </a>
+        </li>
+        <li class="hide-on-large-only">
+          <a href="/question/logout" class="tooltipped" data-position="bottom" data-tooltip="ログアウト">
+            <i class="mdi mdi-logout"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="container">
+    <div class="wrapper" style="margin-top :20px">
+    <a target="_self"><button id="n1_button" data-clicked-times="0" type="button" style="width:50px;height:30px">N1</button></a>
+    <a target="_self"><button id="n2_button" data-clicked-times="0" type="button" style="width:50px;height:30px">N2</button></a>
+    <!--
+    <a target="_self"><button id="n3_button" type="button" style="width:50px;height:30px">N3</button></a>
+    <a target="_self"><button id="n4_button" type="button" style="width:50px;height:30px">N4</button></a>
+    <a target="_self"><button id="n5_button" type="button" style="width:50px;height:30px">N5</button></a>
+    -->
+    <br><br>
+    <a target="_self"><button type="button" id="kanji_button" data-clicked-times="0" style="width:50px;height:30px">Kanji</button></a>
+    <a target="_self"><button type="button" id="grammar_button" data-clicked-times="0" style="width:80px;height:30px">Grammar</button></a>
+    <br><br>
+    <a href="" class="question01"><button type="button" id="button_01" style="width:50px;height:30px">01</button></a>
+    <a href="" class="question02"><button type="button" id="button_02" style="width:50px;height:30px">02</button></a>
+    <a href="" class="question03"><button type="button" id="button_03" style="width:50px;height:30px">03</button></a>
+    </div>
+    @!section('content')
+  </div>
+</main>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="/js/materialize.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/n1_kanji_question_01.js"></script>
+<script type="text/javascript" src="/js/n1_kanji_question_02.js"></script>
+<script type="text/javascript" src="/js/n1_kanji_question_03.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems);
+  });
+</script>
+@!section('javascript')
+</body>
+</html>

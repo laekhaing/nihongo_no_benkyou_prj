@@ -1,6 +1,6 @@
 'use strict'
 
-class HomeController {
+class N1QuestionController {
   async kanji_question ({ view }) {
     return view.render('/question/n1_kanji_question')
   }
@@ -11,6 +11,14 @@ class HomeController {
 
   async kanji_question_02 ({ view }) {
     return view.render('/question/n1_kanji_question_02')
+  }
+
+  async kanji_question_03 ({ view }) {
+    return view.render('/question/n1_kanji_question_03')
+  }
+
+  async kanji_question_04 ({ view }) {
+    return view.render('/question/n1_kanji_question_04')
   }
 
   async grammar_question ({ view }) {
@@ -28,4 +36,4 @@ class HomeController {
 
 }
 
-module.exports = HomeController
+module.exports = N1QuestionController

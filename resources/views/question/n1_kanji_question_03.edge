@@ -1,0 +1,220 @@
+@layout('question/index')
+
+@section('content')
+<div class="input-field col s3">
+<p>
+<h3 class="entry-title">JLPT KANJI QUIZ N1-03</h3>
+<span class="character" style="font-size : 1.5rem;">赤い部分の言葉を漢字で書くとき、最もよいものを一つ選んでください。</span>
+</p>
+Q:1　あの新製品に関しては、断られたのかと思いきや、<font COLOR="#ff0000">ぼうだい</font>な量の依頼が来た。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion1" id="1" onclick="questionCheck_03(1,1)" />
+    <span>１　膨大</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion1" id="2" onclick="questionCheck_03(1,2)" />
+    <span>２　膨台</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion1" id="3" onclick="questionCheck_03(1,3)" />
+    <span>３　膜大</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion1" id="4" onclick="questionCheck_03(1,4)" />
+    <span>４　膜台</span>
+  </label>
+</FORM>
+<img src="/pic/999n.gif" width="36" height="33" border="0" name="kekka1"><br />
+
+Q:2　その事件の<font COLOR="#ff0000">はいけい</font>には、お互いの誤解からの感情の問題があるのではあるまいか。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="questionCheck_03(2,1)" />
+    <span>１　拝啓</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="questionCheck_03(2,2)" />
+    <span>２　背景</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="questionCheck_03(2,3)" />
+    <span>３　拝敬</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="questionCheck_03(2,4)" />
+    <span>４　背経</span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka2"><br />
+
+Q:3　現状を<font COLOR="#ff0000">はあく</font>しないことには対策を立てようにも立てられない。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="questionCheck_03(3,1)" />
+    <span>　１　把握</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="questionCheck_03(3,2)" />
+    <span>　２　肥握</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="questionCheck_03(3,3)" />
+    <span>　３　胞掘</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="questionCheck_03(3,4)" />
+    <span>　４　杷据</span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka3"><br />
+
+Q:4　従来の認識を改めるだけの<font COLOR="#ff0000">じゅうなん</font>な心が求められている。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="questionCheck_03(4,1)" />
+    <span>　１　茅難</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="questionCheck_03(4,2)" />
+    <span>　２　茅軟</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="questionCheck_03(4,3)" />
+    <span>　３　柔軟</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="questionCheck_03(4,4)" />
+    <span>　４　柔難 </span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka4"><br />
+
+Q:5　いくら<font COLOR="#ff0000">けいい</font>を説明したところで、それは言い訳としか理解されないであろう。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="questionCheck_03(5,1)" />
+    <span>　１　系偉</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="questionCheck_03(5,2)" />
+    <span>　２　経偉</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="questionCheck_03(5,3)" />
+    <span>　３　系緯</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="questionCheck_03(5,4)" />
+    <span>　４　経緯 </span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka5"><br />
+
+Q:6　今にも雨が降り出さんばかりの空<font COLOR="#ff0000">もよう</font>で、家を出ようにも出られなかった。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="questionCheck_03(6,1)" />
+    <span>　１　文様</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="questionCheck_03(6,2)" />
+    <span>　２　紋様</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="questionCheck_03(6,3)" />
+    <span>　３　猛様</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="questionCheck_03(6,4)" />
+    <span>　４　模様 </span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka6"><br />
+
+Q:7　症状が改善されたのは新薬開発の<font COLOR="#ff0000">おんけい</font>といわざるをえない。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="questionCheck_03(7,1)" />
+    <span>　１　恩専</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="questionCheck_03(7,2)" />
+    <span>　２　恩恵</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="questionCheck_03(7,3)" />
+    <span>　３　御専</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="questionCheck_03(7,4)" />
+    <span>　４　御恵</span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka7"><br />
+
+Q:8　不良品による火災の発生により<font COLOR="#ff0000">すみやか</font>な商品の回収を余儀なくされた。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="questionCheck_03(8,1)" />
+    <span>　１　清やか</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="questionCheck_03(8,2)" />
+    <span>　２　済やか</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="questionCheck_03(8,3)" />
+    <span>　３　速やか</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="questionCheck_03(8,4)" />
+    <span>　４　早やか</span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka8"><br />
+
+Q:9　組織存続のためとはいえ、現体制の強引な<font COLOR="#ff0000">しゅくしょう</font>は危険極まりないと思われます。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="questionCheck_03(9,1)" />
+    <span>　１　縮小</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="questionCheck_03(9,2)" />
+    <span>　２　縮少</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="questionCheck_03(9,3)" />
+    <span>　３　宿小</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="questionCheck_03(9,4)" />
+    <span>　４　宿少</span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka9"><br />
+
+Q:10　現地に行ってみて初めて、過疎化の<font COLOR="#ff0000">あくじゅんかん</font>を認識することができた。
+<FORM>
+  <label>
+    <input type="radio" name="qusetion2" id="1" onclick="questionCheck_03(10,1)" />
+    <span>　１　空循還</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="2" onclick="questionCheck_03(10,2)" />
+    <span>　２　悪循還</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="3" onclick="questionCheck_03(10,3)" />
+    <span>　３　空循環</span>
+  </label> <br/>
+  <label>
+    <input type="radio" name="qusetion2" id="4" onclick="questionCheck_03(10,4)" />
+    <span>　４　悪循環</span>
+  </label>
+</FORM>
+<IMG src="/pic/999n.gif" width="36" height="33" border="0" name="kekka10"><br />
+
+</div>
+@endsection

@@ -1,3 +1,6 @@
 .button-clicked {
-  background: #149286;
+  background-color: #149286;
+}
+.button-release {
+  background-color: #dde0e0;
 }
