@@ -40,6 +40,8 @@ function checkButtonClick(){
     $("a.question02").attr("href", "/question/kanji/n1_kanji_question_02");
     // set url link of N1 Kanji Questions for 03
     $("a.question03").attr("href", "/question/kanji/n1_kanji_question_03");
+    // set url link of N1 Kanji Questions for 04
+    $("a.question04").attr("href", "/question/kanji/n1_kanji_question_04");
   }
 
 // Check N1 and Grammar buttons are clicked
