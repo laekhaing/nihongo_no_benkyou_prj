@@ -1,5 +1,9 @@
 .button-clicked {
   background-color: #149286;
+  border-top-color: #0000ff;
+  border-left-color: #0000ff;
+  border-right-color: #0000ff;
+  border-bottom-color: #0000ff;
 }
 .button-release {
   background-color: #dde0e0;

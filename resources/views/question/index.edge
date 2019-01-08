@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
-<body>
+<body onLoad="onLoadFunction()">
 <header>
   <nav class="blue lighten-2">
     <div class="nav-wrapper">
@@ -48,10 +48,10 @@
     <a target="_self"><button type="button" id="kanji_button" data-clicked-times="0" style="width:50px;height:30px">Kanji</button></a>
     <a target="_self"><button type="button" id="grammar_button" data-clicked-times="0" style="width:80px;height:30px">Grammar</button></a>
     <br><br>
-    <a href="" class="question01"><button type="button" id="button_01" style="width:50px;height:30px">01</button></a>
-    <a href="" class="question02"><button type="button" id="button_02" style="width:50px;height:30px">02</button></a>
-    <a href="" class="question03"><button type="button" id="button_03" style="width:50px;height:30px">03</button></a>
-    <a href="" class="question04"><button type="button" id="button_04" style="width:50px;height:30px">04</button></a>
+    <a target="_self" href="" class="question01"><button type="button" id="button_01" style="width:50px;height:30px" onclick="checkButtonClick()">01</button></a>
+    <a href="" class="question02"><button type="button" id="button_02" style="width:50px;height:30px" onclick="checkButtonClick()">02</button></a>
+    <a href="" class="question03"><button type="button" id="button_03" style="width:50px;height:30px" onclick="checkButtonClick()">03</button></a>
+    <a href="" class="question04"><button type="button" id="button_04" style="width:50px;height:30px" onclick="checkButtonClick()">04</button></a>
     </div>
     @!section('content')
   </div>
@@ -63,11 +63,14 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <script type="text/javascript" src="/js/n1_kanji_question_01.js"></script>
 <script type="text/javascript" src="/js/n1_kanji_question_02.js"></script>
 <script type="text/javascript" src="/js/n1_kanji_question_03.js"></script>
 <script type="text/javascript" src="/js/n1_kanji_question_04.js"></script>
 <script type="text/javascript" src="/js/n1_grammar_question_01.js"></script>
+<script type="text/javascript" src="/js/n1_grammar_question_02.js"></script>
+<script type="text/javascript" src="/js/n1_grammar_question_03.js"></script>
 <script type="text/javascript" src="/js/common.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {

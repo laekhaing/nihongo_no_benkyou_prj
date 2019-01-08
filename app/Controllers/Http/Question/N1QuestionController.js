@@ -1,7 +1,7 @@
 'use strict'
 
 class N1QuestionController {
-  async kanji_question ({ view }) {    
+  async kanji_question ({ view }) {
     return view.render('/question/n1_kanji_question')
   }
 
@@ -31,6 +31,10 @@ class N1QuestionController {
 
   async grammar_question_02 ({ view }) {
     return view.render('/question/n1_grammar_question_02')
+  }
+
+  async grammar_question_03 ({ view }) {
+    return view.render('/question/n1_grammar_question_03')
   }
 
 
