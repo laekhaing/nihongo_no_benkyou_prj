@@ -1,7 +1,7 @@
-function onLoadFunction() {
-  $("#n1_button").addClass('button-clicked');
-  $("#kanji_button").addClass('button-clicked');
-}
+// function onLoadFunction() {
+//   $("#n1_button").addClass('button-clicked');
+//   $("#kanji_button").addClass('button-clicked');
+// }
 
 var n1_click_count, kanji_click_count, grammar_click_count, n2_click_count
 // Check N1 button is clicked
